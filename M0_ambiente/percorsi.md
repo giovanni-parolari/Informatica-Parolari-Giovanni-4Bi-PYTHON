@@ -108,4 +108,26 @@ collegarlo a una cartella locale, e produrre il primo commit contenente un file 
 il proprio nome, la classe, l'anno scolastico e una riga che descrive lo scopo del repository.
 Aggiungere il docente come collaboratore.
 
-# 
+Comandi:
+```powershell
+PS Z:\> git clone https://github.com/giovanni-parolari/lab-info-4bi-parolari.git
+```
+
+Risultato:
+```powershell
+Cloning into 'lab-info-4bi-parolari'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done
+```
+
+
+
+# Esercizio 6 — Struttura delle cartelle per l'intero anno
+Creare nel repository personale la struttura di cartelle che verrà usata per tutte le consegne
+dell'anno, una per modulo, dalla M0_ambiente alla M8_concorrenza_rete . Poiché Git non regi‐
+stra le cartelle vuote, inserire in ciascuna cartella ancora priva di contenuti un file segnaposto
+.gitkeep vuoto, e in ciascuna cartella un file README.md con il titolo del modulo. Registrare il
+tutto in un solo commit.
+
