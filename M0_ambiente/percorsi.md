@@ -131,3 +131,34 @@ stra le cartelle vuote, inserire in ciascuna cartella ancora priva di contenuti 
 .gitkeep vuoto, e in ciascuna cartella un file README.md con il titolo del modulo. Registrare il
 tutto in un solo commit.
 
+
+```powershell
+mkdir M0_ambiente
+mkdir M1_markdown_jupyter
+mkdir M2_PY_Iniziale
+mkdir M3_StruttureNativePY
+mkdir M4_Funz_Moduli_PY
+mkdir M5_GestioneFile_PY
+mkdir M6_OOP_PY
+mkdir M8_concorrenza_rete
+
+touch M0_ambiente/.gitkeep
+touch M1_markdown_jupyter/.gitkeep
+touch M2_.../.gitkeep
+touch M3_.../.gitkeep
+touch M4_.../.gitkeep
+touch M5_.../.gitkeep
+touch M6_.../.gitkeep
+touch M8_concorrenza_rete/.gitkeep
+
+echo M0_ambiente\README.md
+echo M1_markdown_jupyter\README.md
+echo M2_PY_Iniziale\README.md
+echo M3_StruttureNativePY\README.md
+echo M4_Funz_Moduli_PY\README.md
+echo M5_GestioneFile_PY\README.md
+echo M6_OOP_PY\README.md
+echo M8_concorrenza_rete\README.md
+```
+
+# 
