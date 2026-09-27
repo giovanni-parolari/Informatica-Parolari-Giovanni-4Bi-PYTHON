@@ -161,4 +161,48 @@ echo M6_OOP_PY\README.md
 echo M8_concorrenza_rete\README.md
 ```
 
-# 
+# Esercizio 7 — File .gitignore e verifica delle regole
+
+Scrivere il file **.gitignore** nella radice del repository personale in modo che vengano ignorate la cache dell'interprete Python, gli ambienti virtuali, i file di stato dei notebook e i file temporanei di Windows. Per verificare che le regole funzionino, creare nella cartella **M0_ambiente** un ambiente virtuale di prova e controllare che Git non lo segnali.
+
+
+#### Comandi eseguiti
+ 
+```bash
+py -3.12 -m venv M0_ambiente\.venv
+git status
+git check-ignore -v M0_ambiente/.venv/pyvenv.cfg
+```
+
+### RIsultati
+
+`py -3.12 -m venv M0_ambiente\.venv` 
+
+Il seguente comando avvia python e crea l'ambiente virtuale.
+Capiamo che l'operazione è andata a buon fine perche non ha stampato nulla.
+
+
+`git status` 
+```powwershell
+On branch main
+
+Untracked files:
+    (use "git add <file>..." to include in what will be committed)
+                .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+`git check-ignore -v M0_ambiente/.venv/pyvenv.cfg` 
+
+verifica direttamente la regola applicata al file. Se il `.gitignore` contiene la regola `.venv/` alla riga 5, l'output atteso è il seguente: indica il file delle regole, il numero di riga, il modello e il percorso ignorato.
+
+```text
+.gitignore:5:.venv/ M0_ambiente/.venv/pyvenv.cfg
+```
+
+Se questo comando non stampa nulla, Git non ha trovato una regola applicabile al percorso indicato.
+
+### Considerazioni
+
+La cartella **M0_ambiente\.venv** non compare tra i file non tracciati perche c'è il file [**.gitignore**](../.gitignore) che svolege la sua funzione correttamente.
