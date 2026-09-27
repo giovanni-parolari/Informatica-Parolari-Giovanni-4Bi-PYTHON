@@ -17,3 +17,5 @@ ENV/
 [Dd]esktop.ini
 ehthumbs.db
 $RECYCLE.BIN/
+# Cartella di appunti temporanei
+M0_ambiente/temporanei/
