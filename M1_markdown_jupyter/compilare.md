@@ -13,17 +13,21 @@ I sorgenti sono in `src/`, la compilazione va in `bin/` e la classe con il metod
    - eseguire `javac -version` per il compilatore;
    - eseguire `java -version` per l'ambiente di esecuzione.
 
-3. **Compilare** con l'opzione `-d` per generare i file `.class` nella cartella `bin/`:
+3. **Compilazione**:
+
+   -   Con l'opzione `-d` per generare i file `.class` nella cartella `bin/`:
 
 ```powershell
    mkdir -p bin
    javac -d bin src/*.java
 ```
 
-4. **Eseguire** la classe `MediaVoti` con l'opzione `-cp` puntata a `bin/`:
+4. **Esecuzione**:   
+      - La classe `MediaVoti` con l'opzione `-cp` puntata a `bin/`:
 
 ```powershell
    java -cp bin MediaVoti
 ```
 
-5. **Controllare l'output** nel terminale; in caso di errori, verificare i percorsi di `src/` e `bin/`.
+5. **Controllo dell'output**: 
+   - Nel terminale; in caso di errori, verificare i percorsi di `src/` e `bin/`.
