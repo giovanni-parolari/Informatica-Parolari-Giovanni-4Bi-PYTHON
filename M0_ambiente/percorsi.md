@@ -9,8 +9,10 @@ git --version
 
 ### Risultato
 ```powershell
-Python 3.14.7
-
+Python - 3.14.7
+code - 1.139.1
+04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1
+x64
 git version 2.51.0.windows.2
 ```
 
